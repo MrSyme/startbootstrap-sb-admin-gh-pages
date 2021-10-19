@@ -7,7 +7,8 @@ var obj_csv = {
   size:0,
   dataFile:[]
 };
-function readImage(input) {
+function readImage() {
+  var input="assets\Internet Fijo CLARO 2010-2017.csv";
   console.log(input)
 if (input.files && input.files[0]) {
 let reader = new FileReader();
@@ -45,7 +46,7 @@ function parseData(data){
         pointHoverBackgroundColor: "rgba(2,117,216,1)",
         pointHitRadius: 50,
         pointBorderWidth: 2,
-        data: obj_csv.dataFile[0].slice(9),
+        data: obj_csv.dataFile[0].slice(11),
       }],
     },
     options: {
